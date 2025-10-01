@@ -1,4 +1,4 @@
-# esimeneprojekt
+# Esimeneprojekt
 
 World of Monsters
 Portaal on fantaasia huvilistele.
