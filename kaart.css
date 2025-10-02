@@ -1,0 +1,29 @@
+.mainkaart {
+background: linear-gradient(
+to bottom,
+#410073 0%,
+#240b37 32%,
+#2a0943 85%,
+#410073 100%
+);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+width: 100%;
+min-height: 100vh;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+
+.mainkaart h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffdea;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
