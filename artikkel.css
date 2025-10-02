@@ -28,22 +28,45 @@
     font-style: bold;
     font-size: 24px;
     color: #fffdea;
+    padding-bottom: 50px;
 }
 
 .article {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    gap: 20px;
-    text-decoration: none;   
 }
 
-.article h3 {
+.article-heading {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.article-heading h3 {
     font-size: 36px;
     width: 100%;
     color: #fffdea;
     font-style: bold;
+    margin-bottom: 16px;
 }
 
+.article-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.article-item img {
+    max-width: 1000px;
+}
+
+.article-item p {
+    max-width: 1000px;
+    font-size: 30px;
+}
 
 
