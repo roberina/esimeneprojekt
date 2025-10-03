@@ -1,38 +1,223 @@
-.character-container {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}body {
+    background: linear-gradient(
+    to bottom,
+    #410073
+0%,
+    #240B37
+32%,
+    #2A0943
+85%,
+    #410073
+100%
+    );
+}.character-container {
     display: flex;
     align-items: center;
-    gap: 60px; /* increased gap */
+    gap: 60px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
     color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 150px;
 }
-
 .character-image img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px; /* move image more to the left if needed */
+    margin-left: 20px;
 }
-
 .character-box {
-    background-color: rgba(0, 0, 0, 0.6); /* black light box */
     padding: 30px;
     border-radius: 10px;
     max-width: 700px;
+    font-family: 'Itim', cursive;
+    align-self: flex-start;
 }
-
 .character-box h3 {
-    font-size: 28px;
+    font-size: 64px;
     margin-bottom: 16px;
 }
-
 .character-box p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
 }
-
 .character-container.reverse {
     flex-direction: row-reverse;
+}@media (max-width: 1024px) {
+    .character-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+    }    .character-image img {
+        width: 180px;
+        margin-left: 0;
+    }    .character-box {
+        max-width: 90%;
+        text-align: center;
+    }    .character-box h3 {
+        font-size: 48px;
+    }    .character-box p {
+        font-size: 20px;
+    }
+}@media (max-width: 768px) {
+    .character-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }    .character-image img {
+        width: 220px;
+        margin: 0 auto;
+        display: block;
+    }    .character-box {
+        max-width: 90%;
+        padding: 20px;
+    }    .character-box h3 {
+        font-size: 36px;
+    }    .character-box p {
+        font-size: 18px;
+    }
+    .character-container {
+        display: block;
+        text-align: center;
+    }
+}
+/* Header */
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-nav a.logo{
+    font-family: "Annie Use Your Telescope", cursive;
+}
+
+.header-nav a{
+    color: #fffdea;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    color: #fffdea;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+    padding-right: 50px;
+}
+/* Page end */
+
+footer{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 309px;
+    width: 100%;
+    background: #1d063d;
+    color: #fffdea;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fffdea;
+}
+
+footer nav.logo{
+    font-size: 24px;
+}
+
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fffdea;
+    font-size: 36px;
+    font-family: "Annie Use Your Telescope", cursive;
+    width: 284px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+footer nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto;       /* automaatne kõrgus */
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    footer nav {
+        flex-direction: column;  /* logo ja menüü stacked */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo a {
+        font-size: 28px;
+        width: auto;
+        text-align: center;
+    }
+
+    .list ul {
+        flex-direction: column;  /* menüü vertikaalselt */
+        gap: 15px;
+        padding: 0;
+    }
+
+    .list ul li a {
+        font-size: 18px;
+    }
+
+    footer div.end p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+footer div.end p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }

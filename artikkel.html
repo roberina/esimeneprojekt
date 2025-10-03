@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="header-nav">
+            <a class="logo" href="index.html">World of monsters</a>
+            <ul class="nav">
+                <li><a href="index.html">avaleht</a></li>
+                <li><a href="uudised.html">uudised</a></li>
+                <li><a href="kaart.html">kaart</a></li>
+                <li><a href="tegelased.html">Tegelased</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="main-container">
         <div class="news-nav">
             <ul>
@@ -31,6 +42,32 @@
                 <p>Ööfestival lõppes suure tulevärgi ja helendava suitsupilvega, mis valgustas linna öises hämaruses. Külastajad kiitsid festivali kui unustamatut kogemust, mis ühendab Arachnoria traditsioone, nalja ja maagilist atmosfääri. Festivalist kujunes selgelt iga-aastane sündmus, mis tõmbab ligi nii kohalikke elanikke kui kaugeid külalisi.</p>
             </div>
         </div>
-    
+
+    <footer >
+        <nav class="footer-nav">
+            <div class="logo">
+                <a href="index.html">Wolrd of monsters</a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">avaleht</a></li>
+                    <li><a href="uudised.html">uudised</a></li>
+                    <li><a href="kaart.html">kaart</a></li>
+                    <li><a href="tegelased.html">tegelased</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="end">
+            <p>2025 © World of Monsters</p>
+        </div>
+    </footer>
 </body>
 </html>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
