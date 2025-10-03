@@ -1,29 +1,66 @@
 .mainkaart {
-background: linear-gradient(
-to bottom,
-#410073 0%,
-#240b37 32%,
-#2a0943 85%,
-#410073 100%
-);
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-gap: 50px;
-width: 100%;
-min-height: 100vh;
-padding-top: 80px;
-padding-bottom: 80px;
-}
-
-.mainkaart h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fffdea;
+    background: linear-gradient(
+    to bottom,
+    #410073 0%,
+    #240b37 32%,
+    #2a0943 85%,
+    #410073 100%
+    );
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+
+.mainkaart h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffdea;
+    text-align: center; /* ✅ centers heading on mobile */
+}
+
+.map-container img {
+    max-width: 100%;   /* ✅ scales image to fit */
+    height: auto;
+    border-radius: 12px; /* optional for nicer look */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+    .mainkaart h1 {
+        font-size: 32px;
+    }
+    .mainkaart {
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .mainkaart h1 {
+        font-size: 24px;
+    }
+    .mainkaart {
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
