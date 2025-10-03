@@ -13,7 +13,7 @@
     gap: 50px;
     width: 100%;
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 150px;
     padding-bottom: 80px;
 }
 
@@ -34,11 +34,6 @@ body {
     max-width: 100%;   /* ✅ scales image to fit */
     height: auto;
     border-radius: 12px; /* optional for nicer look */
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 /* Tablet adjustments */
@@ -62,5 +57,196 @@ body {
         gap: 30px;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+}
+
+
+/* Header */
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-nav a.logo{
+    font-family: "Annie Use Your Telescope", cursive;
+}
+
+.header-nav a{
+    color: #fffdea;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    color: #fffdea;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+/* Page end */
+
+footer{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    height: 309px;
+    width: 100%;
+    background: #1d063d;
+    color: #fffdea;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fffdea;
+}
+
+footer nav.logo{
+    font-size: 24px;
+}
+
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fffdea;
+    font-size: 36px;
+    font-family: "Annie Use Your Telescope", cursive;
+    width: 284px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+footer nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+footer div.end p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Hamburger button - hidden by default */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 50px;
+    z-index: 20;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: #fffdea;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu */
+@media screen and (max-width: 768px) {
+    .header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #14051f;
+        flex-direction: column;
+        width: 200px;
+        gap: 20px;
+        padding: 20px;
+        display: none; /* hide menu by default */
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header-nav a.logo {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto;       /* automaatne kõrgus */
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    footer nav {
+        flex-direction: column;  /* logo ja menüü stacked */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo a {
+        font-size: 28px;
+        width: auto;
+        text-align: center;
+    }
+
+    .list ul {
+        flex-direction: column;  /* menüü vertikaalselt */
+        gap: 15px;
+        padding: 0;
+    }
+
+    .list ul li a {
+        font-size: 18px;
+    }
+
+    footer div.end p {
+        font-size: 18px;
+        text-align: center;
     }
 }

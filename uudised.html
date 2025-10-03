@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="header-nav">
+            <a class="logo" href="index.html">World of monsters</a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul class="nav">
+                <li><a href="index.html">avaleht</a></li>
+                <li><a href="uudised.html">uudised</a></li>
+                <li><a href="kaart.html">kaart</a></li>
+                <li><a href="tegelased.html">Tegelased</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="main-container">
         <div class="news-nav">
             <ul>
@@ -61,5 +78,12 @@
         </div>
     </div>
 </body>
-
 </html>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
