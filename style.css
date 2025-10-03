@@ -262,6 +262,84 @@ footer{
     display: flex;
     margin: 0;
     flex-direction: column;
+    width: 392px;
+    max-width: 100%; 
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color o.3s ease;;
+}
+.news-item:hover {
+    background-color: rgb(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.news-item img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.date {
+    color: #fffdea;
+    font-size: 28px;
+    border-radius: 30px;
+    background-color: #573275 ;
+    width: fit-content;
+    padding: 10px 20px
+}
+
+.sisu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 435px;
+}
+
+.news h4{
+    font-size: 36px;
+    width: 432px;
+}
+
+.news-item p.text{
+    padding: 0;
+    margin: 0;
+}
+
+.news-item p.text{
+    padding: 0;
+    margin: 0;
+}
+
+.news-item h4{
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news a{
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 24px;
+    color: #fffdea;
+    text-transform: uppercase;
+
+}
+
+.latest-news div.nupp{
+    border: 1px solid#fffdea;
+    padding: 14px 14px;
+    width: 161px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+/* Page end */
+
+footer{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
     justify-content: center;
     gap: 40px;
     height: 309px;
@@ -309,6 +387,140 @@ footer nav{
     justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+    .random {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        padding: 20px 10px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .random img {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .random-text {
+        width: 95%;
+        text-align: center;
+        gap: 5vh;
+        align-items: center;
+    }
+
+    .random-text h2 {
+        font-size: 32px;
+    }
+
+    .random-text p {
+        font-size: 16px;
+    }
+
+    .random div.button {
+        width: 90%;
+    }
+
+    .random-text a {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .latest-news {
+        gap: 40px;
+        padding: 20px 10px;
+    }
+
+    .latest-news h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    div.news {
+        flex-direction: column; /* pildid ja tekst stacked */
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .news-item {
+        width: 95%;           /* peaaegu kogu ekraani laiuses */
+        max-width: none;
+        gap: 15px;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding-bottom: 0;
+    }
+
+    .news-item h4 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .news-item p.text {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .latest-news div.nupp {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .latest-news div.nupp a {
+        font-size: 20px;
+        padding: 12px 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto;       /* automaatne kõrgus */
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    footer nav {
+        flex-direction: column;  /* logo ja menüü stacked */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo a {
+        font-size: 28px;
+        width: auto;
+        text-align: center;
+    }
+
+    .list ul {
+        flex-direction: column;  /* menüü vertikaalselt */
+        gap: 15px;
+        padding: 0;
+    }
+
+    .list ul li a {
+        font-size: 18px;
+    }
+
+    footer div.end p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
 
 footer div.end p{
     display: flex;
