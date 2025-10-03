@@ -17,7 +17,7 @@ body {
 .character-container {
     display: flex;
     align-items: center;
-    gap: 60px; /* increased gap */
+    gap: 60px; 
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
@@ -32,16 +32,15 @@ body {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px; /* move image more to the left if needed */
+    margin-left: 20px; 
 }
 
 .character-box {
- /* or transparent, or glassmorphism */
     padding: 30px;
     border-radius: 10px;
     max-width: 700px;
     font-family: 'Itim', cursive;
-    align-self: flex-start; /* ✅ prevent stretching to image height */
+    align-self: flex-start; 
 }
 
 .character-box h3 {
@@ -58,7 +57,7 @@ body {
     flex-direction: row-reverse;
 }
 
-/* Tablet size (max-width: 1024px) */
+
 @media (max-width: 1024px) {
     .character-container {
         flex-direction: column;
@@ -86,24 +85,23 @@ body {
     }
 }
 
-/* Mobile size (max-width: 768px) */
+
 @media (max-width: 768px) {
     .character-container {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        padding: 16px;
+        text-align: center;
     }
 
     .character-image img {
-        width: 150px;
-        margin-left: 0;
+        width: 220px;            
+        margin: 0 auto;          
+        display: block;          
     }
 
     .character-box {
-        max-width: 100%;
+        max-width: 90%;
         padding: 20px;
-        text-align: center;
     }
 
     .character-box h3 {
@@ -112,5 +110,9 @@ body {
 
     .character-box p {
         font-size: 18px;
+    }
+    .character-container {
+        display: block; 
+        text-align: center; 
     }
 }
