@@ -1,0 +1,38 @@
+.character-container {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* increased gap */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+}
+
+.character-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; /* move image more to the left if needed */
+}
+
+.character-box {
+    background-color: rgba(0, 0, 0, 0.6); /* black light box */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.character-box h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.character-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.character-container.reverse {
+    flex-direction: row-reverse;
+}
