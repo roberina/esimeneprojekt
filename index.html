@@ -12,6 +12,12 @@
     <header>
         <nav class="header-nav">
             <a class="logo" href="index.html">World of monsters</a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <ul class="nav">
                 <li><a href="index.html">avaleht</a></li>
                 <li><a href="uudised.html">uudised</a></li>
@@ -88,3 +94,12 @@
 
 
 </html>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
